@@ -1,6 +1,6 @@
-# morse dico
-$morse_dict = {
-    "a" => '.-',
+def decode_char str
+  morse_dict = {
+    'a' => '.-',
     'b' => '-...',
     'c' => '-.-.',
     'd' => '-..',
@@ -37,24 +37,20 @@ $morse_dict = {
     '9' => '----.',
     '0' => '-----'
   }
-  
-  def decode_char str
-    $morse_dict.each_key do |key|
-      return key.upcase if str == $morse_dict[key]
-    end
-    return "unknown"
+  morse_dict.each_key do |key|
+    return key.upcase if str == morse_dict[key]
   end
+  return "unknown"
+end
 
-  def decode_word str
-  word = ''
+def decode_word str
   str.split(" ").each do |char|
-    word += decode_char(char)
+  word += decode_char(char)
   end
   return word
 end
 
 def decode str
-  message = ''
   str.split("   ").each_with_index do |word, index|
     if index > 0 
     message += " #{decode_word(word)}"
