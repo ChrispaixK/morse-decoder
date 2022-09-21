@@ -52,14 +52,14 @@ end
 
 def decode(str)
   message = ''
-  str.split("   ").each_with_index do |word, index|
-    if index != 0
-      message += " #{decode_word(word)}"
-    else
+  str.split('   ').each_with_index do |word, index|
+    if index == 0
       message += decode_word(word)
+    else
+      message += " #{decode_word(word)}"
     end
   end
-  p message
+  return message
 end
 
-decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+p decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
