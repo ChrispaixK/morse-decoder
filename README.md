@@ -2,7 +2,7 @@
 
 # Morse decoder
 
-> This is a simple ruby code that takes a char word or sentences in morse and turn it into readable text.
+> This is a simple ruby code that takes a char word or sentences in morse and translate  it into readable text.
 
 
 ## Built With
@@ -11,17 +11,17 @@
 
 ## Authors
 
-👤 **Author1**
+👤 **Sidney**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [XsidX](https://github.com/XsidX)
+- Twitter: [@\_sid_o](https://twitter.com/_sid_o_)
+- LinkedIn: [Sidney Kaguli](https://www.linkedin.com/in/sidney-kaguli)
 
-👤 **Author2**
+👤 **Chrispaix Kaze**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Chrispaix Kaze](https://github.com/ChrispaixK)
+- Twitter: [@Chrispaix Kaze](https://twitter.com/ChrispaixK)
+- LinkedIn: [Chrispaix Kaze](https://www.linkedin.com/in/chrispaix-kaze-70445a175/)
 
 ## 🤝 Contributing
 
