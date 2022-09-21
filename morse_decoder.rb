@@ -1,4 +1,4 @@
-def decode_char (str)
+def decode_char(str)
   morse_dict = {
     'a' => '.-',
     'b' => '-...',
@@ -42,15 +42,15 @@ def decode_char (str)
   end
 end
 
-def decode_word (str)
+def decode_word(str)
   word = ''
-  str.split(' ').each do |char|
-  word += decode_char(char)
+  str.split.each do |char|
+    word += decode_char(char)
   end
   return word
 end
 
-def decode (str)
+def decode(str)
   message = ''
   str.split("   ").each_with_index do |word, index|
     if index != 0
