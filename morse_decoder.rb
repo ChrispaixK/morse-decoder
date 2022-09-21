@@ -4,7 +4,7 @@ def decode_char(str)
     'g' => '--.', 'h' => '....', 'i' => '..', 'j' => '.---', 'k' => '-.-', 'l' => '.-..',
     'm' => '--', 'n' => '-.', 'o' => '---', 'p' => '.--.', 'q' => '--.-', 'r' => '.-.',
     's' => '...', 't' => '-', 'u' => '..-', 'v' => '...-', 'w' => '.--', 'x' => '-..-',
-    'y' => '-.--', 'z' => '--..',
+    'y' => '-.--', 'z' => '--..'
   }
   morse_dict.each_key do |key|
     return key.upcase if str == morse_dict[key]
@@ -16,7 +16,7 @@ def decode_word(str)
   str.split.each do |char|
     word += decode_char(char)
   end
-  return word
+  word
 end
 
 def decode(str)
