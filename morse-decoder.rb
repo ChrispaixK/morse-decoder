@@ -63,3 +63,24 @@ $morse_dict = {
     end
     return "unknown"
   end
+
+  def decode_word str
+  word = ''
+  str.split(" ").each do |char|
+    word += decode_char(char)
+  end
+  return word
+end
+
+def decode str
+  message = ''
+  str.split("   ").each_with_index do |word, index|
+    if index > 0 
+    message += " #{decode_word(word)}"
+    else
+      message += decode_word(word)
+    end
+  end
+  p message
+  return message
+end
